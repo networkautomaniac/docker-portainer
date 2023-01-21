@@ -1,0 +1,8 @@
+# IGNORE FILES IN ROOT/:
+.env
+
+# IGNORE FILES IN DATA/:
+data/*
+
+# DO NOT IGNORE FILES IN DATA/:
+!data/.gitkeep
