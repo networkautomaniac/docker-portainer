@@ -10,4 +10,13 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - ./data:/data
+    networks:
+      - portainer
     restart: unless-stopped
+networks:
+  portainer:
+    name: portainer
+    ipam:
+      config:
+        - subnet: "172.16.3.0/24"
+          gateway: "172.16.3.1"
