@@ -1,5 +1,4 @@
 ---
-version: "3.9"
 services:
   portainer-ce:
     image: portainer/portainer-ce:latest
